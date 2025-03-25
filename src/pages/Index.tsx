@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { getUniqueQuote, categories } from '@/lib/quotes';
 
 const Index = () => {
-  const [quote, setQuote] = useState({ text: '', author: '' });
+  const [quote, setQuote] = useState({ text: '', author: '', category: '' });
   const [isChanging, setIsChanging] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('all');
